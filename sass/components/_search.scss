@@ -1,0 +1,69 @@
+.search {
+  flex: 0 0 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include respond(smallest) {
+    order: 4;
+    flex: 0 0 100%;
+    margin-top: 2rem;
+  }
+
+  &__input { //input elements don't inherit font-family of the document
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: $color-grey-light-2;
+    border: none;
+    padding: .7rem 2rem;
+    border-radius: 100px; //large number, doesn't matter
+    width: 90%;
+    transition: all .2s;
+    margin-right: -3rem;
+
+    @include respond(smallest) {
+      width: 70%;
+    }
+
+    &:focus {
+      outline: none;
+      width: 100%;
+      background-color: $color-grey-light-3;
+
+      @include respond(smallest) {
+        width: 90%;
+      }
+    }
+
+    &::placeholder {
+      font-weight: 100;
+      color: $color-grey-light-4;
+    }
+  }
+
+  &__input:focus + &__button {
+    background-color: $color-grey-light-3;
+  }
+
+  &__button {
+    border: none;
+    background-color: $color-grey-light-2;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $color-grey-dark-3;
+  }
+}

@@ -1,0 +1,15 @@
+.detail {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 4.5rem;
+  background-color: $color-grey-light-1;
+  border-bottom: $line;
+
+  @include respond(medium) {
+    padding: 3rem;
+  }
+  
+  @include respond(small) {
+    flex-direction: column;
+  }
+}

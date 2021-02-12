@@ -1,0 +1,10 @@
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  color: $color-grey-light-4;
+  
+  @include respond(medium) {
+    display: none;
+  }
+}

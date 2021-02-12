@@ -1,0 +1,31 @@
+.list {
+  margin: 3rem 0;
+  list-style: none;
+  padding: 3rem;
+  border-top: $line;
+  border-bottom: $line;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 0 0 50%;
+    margin-bottom: .7rem;
+    display: flex;
+    align-items: center;
+
+    &:before {
+      content: '';
+      color: $color-primary;
+      margin-right: .7rem;
+      height: 1rem;
+      width: 1rem;
+      display: inline-block;
+
+      background-color: $color-primary;
+      -webkit-mask-image: url(../img/chevron-thin-right.svg);
+      -webkit-mask-size: cover;
+    }
+  }
+
+}

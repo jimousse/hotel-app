@@ -1,0 +1,19 @@
+.description {
+  background-color: white;
+  box-shadow: $shadow-light;
+  padding: 3rem;
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+  border-radius: $border-radius;
+
+  @include respond(medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @include respond(small) {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+}

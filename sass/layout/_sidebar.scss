@@ -1,0 +1,12 @@
+.sidebar {
+  background-color: $color-grey-dark-1;
+  flex: 0 0 18%;
+  // 0 0: we don't want it to grow or shrink
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include respond(medium) {
+    flex-direction: row;
+  }
+}

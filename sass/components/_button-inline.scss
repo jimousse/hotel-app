@@ -1,0 +1,43 @@
+.btn-inline {
+  border: none;
+  color: $color-primary;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all .2s;
+
+  & span {
+      margin-left: 3px;
+      transition: margin-left .2s;
+  }
+
+  &:hover {
+    color: $color-grey-dark-1;
+    
+    & > span {
+        animation: pulsate .5s infinite;
+    }
+  }
+
+  &:focus {
+      outline: none;
+  }
+}
+
+
+@keyframes pulsate {
+  0% {
+    margin-left: 3px;
+  }
+
+  50% {
+    margin-left: 8px;
+  }
+
+  100% {
+    margin-left: 3px;
+  }
+}

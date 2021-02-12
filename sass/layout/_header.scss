@@ -1,0 +1,15 @@
+.header {
+  height: 7rem;
+  font-size: 1.4rem;
+  background-color: #fff;
+  border-bottom: 1px solid $color-grey-light-3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @include respond(smallest) {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 1rem;
+  }
+}

@@ -1,0 +1,83 @@
+.overview {
+  display: flex;
+  border-bottom: $line;
+  align-items: center;
+
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+
+    @include respond(small) {
+      font-size: 1.5rem;
+      padding: 1.5rem 2rem;
+    }
+
+    @include respond(smallest) {
+      font-size: 1.5rem;
+      padding: .5rem 1rem;
+    }
+  }
+
+  &__stars {
+    margin-right: auto; // wow !!!!!!
+    display: flex;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem; 
+    height: 1.75rem;
+    fill: $color-primary;
+  }
+
+  &__location {
+    margin-left: auto; // wow !!!!!!
+    display: flex;
+    font-size: 1.2rem;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover > * {
+      color: $color-grey-dark-1;
+      fill: $color-grey-dark-1;
+    }
+
+    
+    @include respond(small) {
+      & > .btn-inline {
+        display: none;
+      }
+    }
+  }
+
+  &__icon-location {
+    margin-right: .25rem;
+  }
+
+  &__rating {
+    background-color: $color-primary;
+    align-self: stretch;
+    margin-left: 3rem;
+    color: white;
+    padding: 0 2.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__rating-average {
+    font-size: 2.35rem;
+    font-weight: 300;
+    margin-bottom: -.5rem;
+  }
+
+  &__rating-count {
+    font-size: .8rem;
+    text-transform: uppercase;
+  }
+}

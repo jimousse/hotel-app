@@ -1,0 +1,13 @@
+.container {
+  max-width: 120rem;
+  background-color: $color-grey-light-2;
+  margin: 8rem auto;
+  box-shadow: $shadow-dark;
+  min-height: 50rem;
+
+  @include respond(largest) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
