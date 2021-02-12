@@ -495,6 +495,10 @@ body {
     justify-content: center;
     align-items: center;
     transition: all .2s; }
+    @media only screen and (max-width: 37.5em) {
+      .user-nav__notification {
+        top: -.1rem;
+        right: 1.2rem; } }
   .user-nav__user-photo {
     height: 3.75rem;
     border-radius: 50%; }
