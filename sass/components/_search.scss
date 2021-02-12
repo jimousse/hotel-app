@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
 
-  @include respond(smallest) {
+  @include respond(small) {
     order: 4;
     flex: 0 0 100%;
     margin-top: 2rem;
@@ -23,7 +23,7 @@
     transition: all .2s;
     margin-right: -3rem;
 
-    @include respond(smallest) {
+    @include respond(small) {
       width: 70%;
     }
 

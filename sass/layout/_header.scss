@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
 
-  @include respond(smallest) {
+  @include respond(small) {
     flex-wrap: wrap;
     height: auto;
     padding: 1rem;
