@@ -1,11 +1,11 @@
-# Real estate page
+# Hotel booking app
 
-Demo: https://jimousse.github.io/real-estate-app/
+Demo: https://jimousse.github.io/hotel-app/
 
 This is a CSS project done for the Udemy Advanced Sass online [course](https://www.udemy.com/course/advanced-css-and-sass/).
 
 It uses:
-- CSS grid
+- CSS flexbox
 - Sass
 - BEM methodology
 - CSS animations
