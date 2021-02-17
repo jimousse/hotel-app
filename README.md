@@ -9,5 +9,6 @@ It uses:
 - Sass
 - BEM methodology
 - CSS animations
+- responsive layout using media queries
 
 This is a static page, no JavaScript runs on this project.
